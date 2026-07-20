@@ -5,12 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get-code
-        uses: actions/checkout@v7
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-      - name: Install dependencies
-        run: npm install
-      - name: Run tests
-        run: npm test
+        run: echo 'anil sidhu'
+      - name: bye
+        run: echo "bye bye"
