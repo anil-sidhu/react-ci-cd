@@ -1,0 +1,11 @@
+name: Output information
+on: [push,workflow_dispatch]
+jobs:
+    info:
+       runs-on: ubuntu-latest
+       steps:
+            - name: output information
+              run: |
+                echo "Hello, this is a test workflow."
+                echo "Current date and time: $(date)"
+                echo "GitHub repository: ${{ toJSON(github) }}"
