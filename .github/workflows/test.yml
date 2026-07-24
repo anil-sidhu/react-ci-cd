@@ -1,10 +1,8 @@
 name: Test App
 on : push
 jobs:
-  test:
+  pull_request:
     runs-on: ubuntu-latest
     steps:
       - name: get-code
-        run: echo 'anil sidhu'
-      - name: bye
-        run: echo "bye bye"
+        run: echo 'pull request opened'
