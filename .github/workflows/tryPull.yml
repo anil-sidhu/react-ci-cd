@@ -1,4 +1,4 @@
-name: Test App
+name: run on pull request
 on : 
     pull_request:
      types: opened
