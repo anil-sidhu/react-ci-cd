@@ -30,7 +30,7 @@ jobs:
       - name: Deploy to GitHub Pages
         run: echo "Deploying to GitHub Pages..."
       - name: upload-artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-artifact
           path: |
