@@ -2,6 +2,7 @@ name: Test App
 on : 
     pull_request:
      types: opened
+    workflow_dispatch:
 jobs:
   pull_request:
     runs-on: ubuntu-latest
