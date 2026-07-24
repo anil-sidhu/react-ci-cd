@@ -1,7 +1,7 @@
 name: run on pull request
 on : 
     pull_request:
-     types: opened
+     types: [opened]
     workflow_dispatch:
 jobs:
   pull_request:
