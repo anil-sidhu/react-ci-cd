@@ -9,3 +9,16 @@ jobs:
                 echo "Hello, this is a test workflow."
                 echo "Current date and time: $(date)"
                 echo "GitHub repository: ${{ toJSON(github) }}"
+    eslint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v7
+            - name: Set up Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '24'
+            - name: Install dependencies
+              run: npm install
+            - name: Run ESLint
+              run: npx eslint . --ext .js,.jsx,.ts,.tsx
