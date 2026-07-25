@@ -51,6 +51,6 @@ jobs:
           - name: output-artifact
             run: ls
           - name: output file name
-            run: echo {{need.build.outputs.script-file}}
+            run: echo ${{ needs.build.outputs.script-file }}
           - name : Deploy to GitHub Pages
             run: echo "Deploying to GitHub Pages..."
